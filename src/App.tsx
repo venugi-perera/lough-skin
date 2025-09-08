@@ -16,6 +16,7 @@ import { CartProvider } from "./context/CartContext";
 import OurTeamPage from "./pages/OurTeam";
 import BookingSuccessPage from "./pages/BookingSucess";
 import BookingFailPage from "./pages/BookingFail";
+import ScrollToTop from "./components/ScrollToTop";
 
 const theme = createTheme({
   palette: {
@@ -52,6 +53,7 @@ function App() {
       <CartProvider>
         <CssBaseline />
         <Router>
+          <ScrollToTop />
           <Navigation />
           <main>
             <Routes>
